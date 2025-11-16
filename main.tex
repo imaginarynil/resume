@@ -1,0 +1,272 @@
+%---
+% Original Creator: Sourabh Bajaj 
+% Author: Daniel Sugianto
+% License: MIT
+% References :
+% - https://github.com/sb2nov/resume/tree/master
+% - https://www.overleaf.com/latex/templates/jakes-resume-anonymous/cstpnrbkhndn
+% - https://www.mcgill.ca/caps/files/caps/2023_guide_cv.pdf
+%---
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+
+% number of param = 1
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemLevelOne}[1]{
+  \item\small{
+    {#1 \vspace{-7pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% change the icon for the an item in a level of a list
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Daniel Sugianto} &
+  \href{tel:}{} \textbar{}
+  \href{mailto:danielsugianto.it@gmail.com}{danielsugianto.it@gmail.com} \\
+  \href{https://imaginarynil.github.io/}{imaginarynil.github.io} \textbar{}
+  \href{https://www.linkedin.com/in/sugianto-daniel/}{linkedin.com/in/sugianto-daniel/} &
+  Toronto, Ontario \\
+\end{tabular*}
+
+\section{Certification}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Canadian Securities Course}{May 2025 -- May 2028}
+        {\href{https://www.credly.com/badges/5fffda0e-c7ae-484c-9ad0-20ac6e0cafc0}{Credly link} \textbar{} Student ID: 1173701}{Canadian Securities Institute}
+        \resumeSubheading
+        {Smart Serve Full Course}{November 2025 -- November 2030}
+        {\href{https://drive.google.com/file/d/1WjEX0JcuNXB-8_Qxpvl6wIi2sqKL2Rca/view?usp=sharing}{PDF link} \textbar{} Certificate number: 251105803294}{Smart Serve Ontario}
+        \resumeSubheading
+        {SafeCheck Advanced Food Safety Certification}{November 2025 -- November 2030}
+        {\href{https://drive.google.com/file/d/1knf1DtXvaNkkppGISQji2rPocgKVI8rj/view?usp=sharing}{PDF link} \textbar{} Certificate number: 106449177}{SafeCheck}
+    \resumeSubHeadingListEnd
+\section{Skills}
+    \resumeItemListStart
+        \resumeItemLevelOne
+        {\textbf{Bilingual}: English, Indonesian}
+        \resumeItemLevelOne
+        {\textbf{Microsoft Office}: Excel, Word, PowerPoint, Outlook}
+        \resumeItemLevelOne
+        {\textbf{Finance}: Analyzing and drafting financial statements and calculating compounding interest (e.g., bond fair price)}
+        \resumeItemLevelOne
+        {\textbf{Programming}: Python, C/C++, HTML, CSS, JavaScript, TypeScript, SQL, Java, PHP, Bash, Go}
+        \resumeItemLevelOne
+        {\textbf{Web Development}: React, Next.js, Laravel, Express.js}
+        \resumeItemLevelOne
+        {\textbf{Teaching}: Mathematics, Physics, Computer Science, and Finance}
+        \resumeItemLevelOne
+        {Troubleshooting computer, printer, and network problems}
+        \resumeItemLevelOne
+        {Drawing digital illustrations using Krita}
+    \resumeItemListEnd
+
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Diploma in Financial Services}{September 2023 -- April 2025}
+        {Humber Polytechnic}{Toronto, Canada}
+        \resumeSubheading
+        {Bachelor of Computer Science}{August 2019 -- December 2022}
+        {Sepuluh Nopember Institute of Technology}{Surabaya, Indonesia}
+    \resumeSubHeadingListEnd
+
+\section{Professional Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Volunteer}{April 2025 -- Present}
+        {Tomiczek Financial Team}{Vaughan, Canada}
+            \resumeItemListStart
+                \resumeItem
+                {Develop a novel service to identify strengths and problems in all financial aspects of clients by means of an interview and a questionnaire}
+                \resumeItem
+                {Improve the style and functionality of the official website at https://tfteam.ca/}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Financial Services Business Intern}{January 2025 -- March 2025}
+        {Tomiczek Financial Team}{Vaughan, Canada}
+            \resumeItemListStart
+                \resumeItem
+                {Built a customized customer relationship management system using Google Sheets to track the performance of 20 future financial associates}
+                \resumeItem
+                {Set up newsletters using Zoho Campaign, documented the newsletter posting process on Notion, and delivered newsletters to over 20 clients}
+                \resumeItem
+                {Researched and presented platforms to market online courses and downloadable digital products}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Part-time Computer Technician}{January 2023 -- January 2023}
+        {KOKO Komputer}{Bali, Indonesia}
+            \resumeItemListStart
+                \resumeItem
+                {Resolved computer, network, and printer problems for approximately 90 clients monthly}
+                \resumeItem
+                {Assembled desktop computers and performed fresh Windows installations}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Contract Developer}{June 2021 -- June 2022}
+        {iProctor Team}{Surabaya, Indonesia}
+            \resumeItemListStart
+                \resumeItem
+                {Developed two desktop apps to monitor students using deep learning models and display the report of potential academic misconduct to the proctors}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Data Structures and Algorithms Teaching Assistant}{March 2021 -- June 2021}
+        {Sepuluh Nopember Institute of Technology}{Surabaya, Indonesia}
+            \resumeItemListStart
+                \resumeItem
+                {Taught data structures and algorithms using C++ in 6 lab sessions}
+                \resumeItem
+                {Provided tutoring sessions to review the lab materials for a group of 5 to 7 students}
+                \resumeItem
+                {Created programming problems for 5 practicums}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Fundamental Programming Teaching Assistant}{September 2020 -- January 2021}
+        {Sepuluh Nopember Institute of Technology}{Surabaya, Indonesia}
+            \resumeItemListStart
+                \resumeItem
+                {Taught basic programming using C in 6 lab sessions}
+                \resumeItem
+                {Helped students review the materials by providing tutoring sessions for a group of 5 to 7 students}
+                \resumeItem
+                {Created programming problems for 5 practicums}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Bank Statement Cleaner}{May 2025 -- Present}
+        {Developer}{\href{https://imaginarynil.github.io/post/bank-statement-cleaner/index.html}{Documentation} \textbar{} \href{https://github.com/imaginarynil/bank-statement-cleaner}{GitHub}}
+            \resumeItemListStart
+                \resumeItem
+                {Build a command-line application that processes CIBC bank statements and outputs an Excel sheet that can be used to create a personal cash flow statement}
+                \resumeItem
+                {Documented the problem and solution, how to use the program, and the benefits and limitations of the program on my personal website}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Personal Website}{May 2024 -- Present}
+        {Developer}{\href{https://imaginarynil.github.io/}{Website} \textbar{} \href{https://github.com/imaginarynil/imaginarynil.github.io}{GitHub}}
+            \resumeItemListStart
+                \resumeItem
+                {Develop a blog to archive my writings and document my projects}
+                \resumeItem
+                {Implement a sidebar with tree-like items to ease navigation to different post headings}
+                \resumeItem
+                {Implement a reference list and citation feature inspired by BibTeX and Wikipedia}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section{Extracurricular Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Intelligent Computing and Vision Laboratory Administrator}{April 2021 -- April 2022}
+        {Sepuluh Nopember Institute of Technology}{Surabaya, Indonesia}
+            \resumeItemListStart
+                \resumeItem
+                {Maintained the physical lab with a team of 7 administrators}
+                \resumeItem
+                {Supported the delivery of 2 community services led by the ICV professors}
+                \resumeItem
+                {Utilized Excel to manage the lab introduction event schedule and participants’ data}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Schematics National Programming Coordinator}{March 2021 -- October 2021}
+        {Schematics ITS}{Surabaya, Indonesia}
+            \resumeItemListStart
+                \resumeItem
+                {Streamlined problem sets management and statistics visualization using Google Sheets}
+                \resumeItem
+                {Managed 2 programming contests with 83 teams (senior level) and 176 participants (junior level)}
+            \resumeItemListEnd
+        \resumeSubheading
+        {Research and Development Staff}{February 2021 -- September 2021}
+        {IEEE Sepuluh Nopember Institute of Technology Student Branch}{Surabaya, Indonesia}
+            \resumeItemListStart
+                \resumeItem
+                {Automated the calculation of members’ monthly performance scores using Google Sheets, reducing the processing time by approximately 80\%}
+                \resumeItem
+                {Researched and presented student needs for career-building events using a Google Forms questionnaire and online interviews}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\end{document}
